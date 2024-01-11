@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+
+    h1.title-text {
+        font-family: var(--font-title);
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: center;
+        color: var(--primary-color);
+
+        span.purple {
+            color: var(--primary-color);
+            text-shadow: 0 0 10px var(--primary-color),
+                0 0 20px var(--primary-color), 0 0 5px var(--primary-color);
+        }
+
+        span.pink {
+            color: var(--secundary-color);
+            text-shadow: 0 0 10px var(--secundary-color),
+                0 0 20px var(--secundary-color), 0 0 5px var(--secundary-color);
+        }
+
+        @media (max-width: 630px) {
+            font-size: 2.5rem;
+        }
+    }
+}

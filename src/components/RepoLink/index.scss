@@ -1,0 +1,19 @@
+a.header-repo-link {
+    display: grid;
+    place-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--secundary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    transition: all 100ms ease-in-out;
+    border-radius: 5px;
+
+    &:hover {
+        filter: brightness(0.75);
+        transform: scale(1.05);
+    }
+}

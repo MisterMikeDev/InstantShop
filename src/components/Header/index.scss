@@ -1,0 +1,44 @@
+header.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--container-opacity-color);
+    backdrop-filter: blur(10px);
+    opacity: 0.9;
+    width: 80%;
+    height: 5rem;
+    border-radius: 25px;
+    padding: 0 25px;
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 300ms ease-in-out;
+    border: 2.5px solid black;
+    z-index: 3;
+
+    button.header-button {
+        display: grid;
+        place-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: var(--primary-color);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: var(--text-color);
+        font-size: 1.5rem;
+        transition: all 100ms ease-in-out;
+        border-radius: 5px;
+
+        &:hover {
+            filter: brightness(0.75);
+            transform: scale(1.05);
+        }
+    }
+
+    @media (max-width: 630px) {
+        width: 90%;
+        height: 6rem;
+    }
+}

@@ -1,0 +1,15 @@
+div.loader {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1rem solid var(--primary-color);
+    border-top-color: var(--secundary-color);
+    animation: spin 0.5s linear infinite;
+    margin: auto;
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
